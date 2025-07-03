@@ -1,4 +1,12 @@
-// pages/index.tsx
-import Home from './home';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
-export default Home;
+export default function RedirectToLogin() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace('/login');
+  }, [router]);
+
+  return null; // or a loading spinner if you want
+}
