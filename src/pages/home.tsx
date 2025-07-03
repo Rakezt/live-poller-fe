@@ -1,8 +1,16 @@
 import Link from 'next/link';
 import { Box, Button, Container, Typography } from '@mui/material';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
-  const user = localStorage.getItem('userName');
+  const [user, setUser] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const storedUser = localStorage.getItem('userName');
+      setUser(storedUser);
+    }
+  }, []);
   return (
     <Container>
       <Box
