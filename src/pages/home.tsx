@@ -22,12 +22,12 @@ export default function Home() {
         <Typography
           variant='h1'
           fontWeight='bold'
-          sx={{ color: 'secondary.contrastText' }}
+          sx={{ color: 'text.primary' }}
           gutterBottom
         >
           Live Poller
         </Typography>
-        <Typography variant='subtitle1' color='secondary.light' gutterBottom>
+        <Typography variant='subtitle1' color='secondary.main' gutterBottom>
           Hi {user ?? 'User'}, Create and participate in live polls instantly!
         </Typography>
         <Box sx={{ display: 'flex', gap: 2, mt: 2 }}>
@@ -38,7 +38,7 @@ export default function Home() {
           </Link>
           <Link href='/polls' passHref>
             <Button
-              variant='outlined'
+              variant='contained'
               size='large'
               sx={{ color: 'secondary.contrastText' }}
             >

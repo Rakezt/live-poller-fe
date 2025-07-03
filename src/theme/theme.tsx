@@ -5,43 +5,43 @@ const theme = createTheme({
   palette: {
     mode: 'light',
     primary: {
-      main: '#23272F', // Deep navy blue
-      light: '#3A4052', // Slate blue
-      dark: '#181B20', // Almost black
-      contrastText: '#F5F7FA', // Off-white
+      main: '#1976D2', // Blue
+      light: '#63A4FF', // Light Blue
+      dark: '#004BA0', // Dark Blue
+      contrastText: '#FFFFFF',
     },
     secondary: {
-      main: '#1F7A8C', // Steel blue
-      light: '#3FB6C6', // Lighter blue
-      dark: '#14505C', // Dark teal
-      contrastText: '#F5F7FA',
+      main: '#FF9800', // Orange
+      light: '#FFC947', // Light Orange
+      dark: '#C66900', // Dark Orange
+      contrastText: '#FFFFFF',
     },
     background: {
-      default: '#F5F7FA', // Light gray
-      paper: '#23272F', // Deep navy blue
+      default: '#F5F7FA', // Very light gray
+      paper: '#FFFFFF', // White
     },
     error: {
-      main: '#D7263D', // Strong red
-      contrastText: '#F5F7FA',
+      main: '#D32F2F', // Red
+      contrastText: '#FFFFFF',
     },
     warning: {
-      main: '#FFB400', // Bold amber
-      contrastText: '#23272F',
+      main: '#FFA000', // Amber
+      contrastText: '#FFFFFF',
     },
     info: {
-      main: '#1F7A8C', // Steel blue
-      contrastText: '#F5F7FA',
+      main: '#0288D1', // Cyan
+      contrastText: '#FFFFFF',
     },
     success: {
-      main: '#21B573', // Emerald green
-      contrastText: '#23272F',
+      main: '#388E3C', // Green
+      contrastText: '#FFFFFF',
     },
     text: {
-      primary: '#23272F', // Deep navy blue
-      secondary: '#1F7A8C', // Steel blue
-      disabled: '#A0A4A8',
+      primary: '#212121', // Almost black
+      secondary: '#1976D2', // Blue
+      disabled: '#BDBDBD',
     },
-    divider: '#3A4052', // Slate blue
+    divider: '#E0E0E0', // Light gray
   },
   typography: {
     fontFamily: '"Roboto Slab", "Roboto", "Helvetica", "Arial", sans-serif',
@@ -50,24 +50,24 @@ const theme = createTheme({
       fontSize: '2.7rem',
       fontWeight: 900,
       letterSpacing: '-0.02em',
-      color: '#23272F',
+      color: '#1976D2',
       textTransform: 'uppercase',
     },
     h2: {
       fontSize: '2.2rem',
       fontWeight: 800,
       letterSpacing: '-0.01em',
-      color: '#1F7A8C',
+      color: '#FF9800',
     },
     h3: {
       fontSize: '1.7rem',
       fontWeight: 800,
-      color: '#181B20',
+      color: '#388E3C',
     },
     subtitle1: {
       fontSize: '1.15rem',
       fontWeight: 700,
-      color: '#3A4052',
+      color: '#63A4FF',
     },
     button: {
       textTransform: 'uppercase',
@@ -80,30 +80,30 @@ const theme = createTheme({
   },
   shadows: [
     'none',
-    '0px 2px 8px rgba(35,39,47,0.10)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
-    '0px 4px 20px rgba(31,122,140,0.12)',
+    '0px 2px 8px rgba(25,118,210,0.10)',
+    '0px 4px 20px rgba(255,152,0,0.12)',
+    '0px 4px 20px rgba(56,142,60,0.12)',
+    '0px 4px 20px rgba(255,160,0,0.12)',
+    '0px 4px 20px rgba(2,136,209,0.12)',
+    '0px 4px 20px rgba(99,164,255,0.12)',
+    '0px 4px 20px rgba(25,118,210,0.12)',
+    '0px 4px 20px rgba(255,152,0,0.12)',
+    '0px 4px 20px rgba(56,142,60,0.12)',
+    '0px 4px 20px rgba(255,160,0,0.12)',
+    '0px 4px 20px rgba(2,136,209,0.12)',
+    '0px 4px 20px rgba(99,164,255,0.12)',
+    '0px 4px 20px rgba(25,118,210,0.12)',
+    '0px 4px 20px rgba(255,152,0,0.12)',
+    '0px 4px 20px rgba(56,142,60,0.12)',
+    '0px 4px 20px rgba(255,160,0,0.12)',
+    '0px 4px 20px rgba(2,136,209,0.12)',
+    '0px 4px 20px rgba(99,164,255,0.12)',
+    '0px 4px 20px rgba(25,118,210,0.12)',
+    '0px 4px 20px rgba(255,152,0,0.12)',
+    '0px 4px 20px rgba(56,142,60,0.12)',
+    '0px 4px 20px rgba(255,160,0,0.12)',
+    '0px 4px 20px rgba(2,136,209,0.12)',
+    '0px 4px 20px rgba(99,164,255,0.12)',
   ],
   components: {
     MuiButton: {
@@ -114,29 +114,29 @@ const theme = createTheme({
           boxShadow: 'none',
           fontWeight: 800,
           '&:hover': {
-            boxShadow: '0px 2px 8px rgba(35,39,47,0.15)',
-            backgroundColor: '#1F7A8C',
+            boxShadow: '0px 2px 8px rgba(25,118,210,0.15)',
+            backgroundColor: '#1565C0',
           },
         },
         containedPrimary: {
-          background: 'linear-gradient(90deg, #23272F 0%, #1F7A8C 100%)',
+          backgroundColor: '#1976D2',
         },
       },
     },
     MuiPaper: {
       styleOverrides: {
         root: {
-          backgroundColor: '#23272F',
+          backgroundColor: '#FFFFFF',
           borderRadius: 8,
-          boxShadow: '0px 2px 8px rgba(35,39,47,0.10)',
-          color: '#F5F7FA',
+          boxShadow: '0px 2px 8px rgba(25,118,210,0.10)',
+          color: '#212121',
         },
       },
     },
     MuiAppBar: {
       styleOverrides: {
         colorPrimary: {
-          background: 'linear-gradient(90deg, #23272F 0%, #1F7A8C 100%)',
+          backgroundColor: '#1976D2',
         },
       },
     },
@@ -144,9 +144,9 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: 12,
-          boxShadow: '0px 4px 20px rgba(31,122,140,0.12)',
-          backgroundColor: '#181B20',
-          color: '#F5F7FA',
+          boxShadow: '0px 4px 20px rgba(255,152,0,0.12)',
+          backgroundColor: '#FFC947',
+          color: '#212121',
         },
       },
     },
@@ -154,8 +154,8 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: 8,
-          backgroundColor: '#3A4052',
-          color: '#F5F7FA',
+          backgroundColor: '#F5F7FA',
+          color: '#212121',
         },
       },
     },

@@ -23,7 +23,12 @@ const Polls = () => {
 
   return (
     <Container sx={{ py: 4 }}>
-      <Typography variant='h4' fontWeight='bold' color='primary' gutterBottom>
+      <Typography
+        variant='h4'
+        fontWeight='bold'
+        sx={{ color: 'text.primary' }}
+        gutterBottom
+      >
         Available Polls
       </Typography>
 
@@ -41,6 +46,7 @@ const Polls = () => {
               component={CardActionArea}
               sx={{
                 transition: 'transform 0.2s',
+                bgcolor: 'primary.light',
                 '&:hover': { transform: 'scale(1.02)' },
               }}
             >
@@ -55,10 +61,10 @@ const Polls = () => {
                     mt: 1,
                   }}
                 >
-                  <Typography variant='body2' color='secondary.light'>
+                  <Typography variant='body2' color='text.primary'>
                     {poll.options.length} options
                   </Typography>
-                  <Typography variant='body2' color='secondary.light'>
+                  <Typography variant='body2' color='text.primary'>
                     Created by {poll.createdBy}
                   </Typography>
                 </Box>

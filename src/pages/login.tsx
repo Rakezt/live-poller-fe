@@ -153,8 +153,35 @@ export default function LoginPage() {
             variant='contained'
             size='large'
             disabled={!formik.isValid || formik.isSubmitting}
+            endIcon={
+              formik.isSubmitting ? (
+                <span
+                  className='MuiCircularProgress-root MuiCircularProgress-indeterminate'
+                  style={{
+                    width: 20,
+                    height: 20,
+                    marginLeft: 8,
+                    display: 'inline-block',
+                  }}
+                >
+                  <svg
+                    className='MuiCircularProgress-svg'
+                    viewBox='22 22 44 44'
+                  >
+                    <circle
+                      className='MuiCircularProgress-circle'
+                      cx='44'
+                      cy='44'
+                      r='20.2'
+                      fill='none'
+                      strokeWidth='3.6'
+                    />
+                  </svg>
+                </span>
+              ) : null
+            }
           >
-            Continue
+            {formik.isSubmitting ? 'Loading...' : 'Continue'}
           </Button>
         </Box>
       </Paper>

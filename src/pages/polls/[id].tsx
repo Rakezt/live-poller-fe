@@ -87,14 +87,14 @@ const Poll = () => {
             mb: 3,
           }}
         >
-          <Typography variant='body1' color='secondary.light'>
+          <Typography variant='body1' color='text.primary'>
             {poll.createdBy ?? 'Anonymous'} created this poll
           </Typography>
 
           {isHost && (
             <Button
               variant='outlined'
-              sx={{ color: 'secondary.light' }}
+              sx={{ color: 'text.primary' }}
               size='small'
               onClick={handleShare}
             >
@@ -110,10 +110,10 @@ const Poll = () => {
               sx={{ display: 'flex', alignItems: 'center', mb: 2, gap: 2 }}
             >
               <Box sx={{ flexGrow: 1 }}>
-                <Typography variant='subtitle1' color='secondary.contrastText'>
+                <Typography variant='subtitle1' color='text.primary'>
                   {opt.text}
                 </Typography>
-                <Typography variant='caption' color='secondary.light'>
+                <Typography variant='caption' color='text.primary'>
                   {opt.votes} vote{opt.votes !== 1 ? 's' : ''}
                 </Typography>
               </Box>
